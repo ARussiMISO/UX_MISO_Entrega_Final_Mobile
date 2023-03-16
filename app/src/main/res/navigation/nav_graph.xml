@@ -40,16 +40,29 @@
         android:name="com.example.alarmanager.CrearAlarmaFragment"
         android:label="fragment_crear_alarma"
         tools:layout="@layout/fragment_crear_alarma" >
+
     </fragment>
+    <action
+        android:id="@+id/action_crearAlarmaFragment_to_posponerFragment"
+        app:destination="@id/posponerFragment" />
     <action
         android:id="@+id/action_crearAlarmaFragment_to_homeFragment"
         app:destination="@id/homeFragment" />
+
     <fragment
         android:id="@+id/editarAlarmaFragment"
         android:name="com.example.alarmanager.EditarAlarmaFragment"
         android:label="fragment_editar_alarma"
         tools:layout="@layout/fragment_editar_alarma" >
+
+
     </fragment>
+    <action
+        android:id="@+id/action_editarAlarmaFragment_to_sonidoFragment"
+        app:destination="@id/sonidoFragment" />
+    <action
+        android:id="@+id/action_editarAlarmaFragment_to_posponerFragment"
+        app:destination="@id/posponerFragment" />
     <action
         android:id="@+id/action_editarAlarmaFragment_to_eliminarAlarmaFragment"
         app:destination="@id/eliminarAlarmaFragment" />
@@ -85,6 +98,26 @@
     <action
         android:id="@+id/action_alarmasFragment_to_crearAlarmaFragment"
         app:destination="@id/crearAlarmaFragment" />
+    <fragment
+        android:id="@+id/posponerFragment"
+        android:name="com.example.alarmanager.PosponerFragment"
+        android:label="fragment_posponer"
+        tools:layout="@layout/fragment_posponer" >
+
+    </fragment>
+    <action
+        android:id="@+id/action_posponerFragment_to_editarAlarmaFragment2"
+        app:destination="@id/editarAlarmaFragment" />
+    <fragment
+        android:id="@+id/sonidoFragment"
+        android:name="com.example.alarmanager.SonidoFragment"
+        android:label="fragment_sonido"
+        tools:layout="@layout/fragment_sonido" >
+
+    </fragment>
+    <action
+        android:id="@+id/action_sonidoFragment_to_editarAlarmaFragment"
+        app:destination="@id/editarAlarmaFragment" />
 
 
 </navigation>
