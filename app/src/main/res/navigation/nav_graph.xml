@@ -20,7 +20,11 @@
         android:id="@+id/homeFragment"
         android:name="com.example.alarmanager.HomeFragment"
         tools:layout="@layout/fragment_home" >
+
     </fragment>
+    <action
+        android:id="@+id/action_homeFragment_to_alarmasFragment"
+        app:destination="@id/alarmasFragment" />
     <action
         android:id="@+id/action_homeFragment_to_editarAlarmaFragment"
         app:destination="@id/editarAlarmaFragment" />
@@ -66,6 +70,21 @@
     <action
         android:id="@+id/action_eliminarAlarmaFragment_to_homeFragment"
         app:destination="@id/homeFragment" />
+    <fragment
+        android:id="@+id/alarmasFragment"
+        android:name="com.example.alarmanager.AlarmasFragment"
+        android:label="fragment_alarmas"
+        tools:layout="@layout/fragment_alarmas" >
+    </fragment>
+    <action
+        android:id="@+id/action_alarmasFragment_to_homeFragment"
+        app:destination="@id/homeFragment" />
+    <action
+        android:id="@+id/action_alarmasFragment_to_editarAlarmaFragment"
+        app:destination="@id/editarAlarmaFragment" />
+    <action
+        android:id="@+id/action_alarmasFragment_to_crearAlarmaFragment"
+        app:destination="@id/crearAlarmaFragment" />
 
 
 </navigation>
