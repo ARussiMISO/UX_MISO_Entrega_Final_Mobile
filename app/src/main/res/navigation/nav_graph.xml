@@ -14,8 +14,41 @@
     <action
         android:id="@+id/action_loginFragment_to_homeFragment"
         app:destination="@id/homeFragment" />
+
+
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.alarmanager.HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+    <action
+        android:id="@+id/action_homeFragment_to_editarAlarmaFragment"
+        app:destination="@id/editarAlarmaFragment" />
+
+
+    <action
+        android:id="@+id/action_homeFragment_to_crearAlarmaFragment"
+        app:destination="@id/crearAlarmaFragment" />
+
+
+    <fragment
+        android:id="@+id/crearAlarmaFragment"
+        android:name="com.example.alarmanager.CrearAlarmaFragment"
+        android:label="fragment_crear_alarma"
+        tools:layout="@layout/fragment_crear_alarma" >
+    </fragment>
+    <action
+        android:id="@+id/action_crearAlarmaFragment_to_homeFragment"
+        app:destination="@id/homeFragment" />
+    <fragment
+        android:id="@+id/editarAlarmaFragment"
+        android:name="com.example.alarmanager.EditarAlarmaFragment"
+        android:label="fragment_editar_alarma"
+        tools:layout="@layout/fragment_editar_alarma" >
+    </fragment>
+    <action
+        android:id="@+id/action_editarAlarmaFragment_to_homeFragment"
+        app:destination="@id/homeFragment" />
+
+
 </navigation>
