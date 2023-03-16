@@ -43,5 +43,8 @@ class EditarAlarmaFragment : Fragment(R.layout.fragment_editar_alarma) {
         linearSonido.setOnClickListener{
             findNavController().navigate(R.id.action_editarAlarmaFragment_to_sonidoFragment)
         }
+        linearTipo.setOnClickListener{
+            findNavController().navigate(R.id.action_editarAlarmaFragment_to_tipoFragment)
+        }
     }
 }

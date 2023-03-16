@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_tipo"
+    android:background="@color/white"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="20dp"
+    android:scrollbars="vertical"
+    tools:context=".TipoFragment">
+
+    <LinearLayout
+        android:id="@+id/linearTipo1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnTipoBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_baseline_chevron_left"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_light_italic"
+            android:text="Tipo"
+            android:textAlignment="center"
+            android:textColor="@color/blue_dark"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnTipoOk"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_baseline_check_"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTipo2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="10dp"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearTipo1">
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearTipo3"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/background_btn"
+        android:foregroundGravity="center"
+        android:gravity="center|fill_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearTipo2"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:id="@+id/linearSubCrear1"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/list_tem"
+            android:contextClickable="true"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
+
+
+            <TextView
+                android:id="@+id/tvAlarma1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Medicamento"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_gray" />
+
+            <RadioButton
+                android:id="@+id/radioBtnCheck1"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:buttonTint="@color/primary"
+                android:checked="true"
+                android:clickable="true"
+                android:text="RadioButton"
+                android:textAlignment="viewStart" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSubCrear2"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/list_tem"
+            android:contextClickable="true"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
+
+
+            <TextView
+                android:id="@+id/tvAlarma2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Presión"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_gray" />
+
+            <RadioButton
+                android:id="@+id/radioBtnCheck"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/primary"
+                android:checked="false"
+                android:clickable="true"
+                android:text="RadioButton"
+                android:textAlignment="viewStart"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSubCrear3"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/list_tem"
+            android:contextClickable="true"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
+
+
+            <TextView
+                android:id="@+id/tvAlarma3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Glucometria"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_gray" />
+
+            <RadioButton
+                android:id="@+id/radioBtnCheck2"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/primary"
+                android:checked="false"
+                android:clickable="true"
+                android:text="RadioButton"
+                android:textAlignment="viewStart" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSubCrear4"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/list_tem"
+            android:contextClickable="true"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
+
+
+            <TextView
+                android:id="@+id/tvAlarma4"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Insulina"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_gray" />
+
+            <RadioButton
+                android:id="@+id/radioBtnCheck4"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:buttonTint="@color/primary"
+                android:checked="false"
+                android:clickable="true"
+                android:text="RadioButton"
+                android:textAlignment="viewStart" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSubCrear5"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/list_tem"
+            android:contextClickable="true"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
+
+
+            <TextView
+                android:id="@+id/tvAlarma5"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Peso"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_gray" />
+
+            <RadioButton
+                android:id="@+id/radioBtnCheck5"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:buttonTint="@color/primary"
+                android:checked="false"
+                android:clickable="true"
+                android:text="RadioButton"
+                android:textAlignment="viewStart" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSubCrear6"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/list_tem"
+            android:contextClickable="true"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
+
+
+            <TextView
+                android:id="@+id/tvAlarma6"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Saturación de O2"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_gray" />
+
+            <RadioButton
+                android:id="@+id/radioBtnCheck6"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:buttonTint="@color/primary"
+                android:checked="false"
+                android:clickable="true"
+                android:text="RadioButton"
+                android:textAlignment="viewStart" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

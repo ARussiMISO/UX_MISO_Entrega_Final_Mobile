@@ -55,8 +55,10 @@
         android:label="fragment_editar_alarma"
         tools:layout="@layout/fragment_editar_alarma" >
 
-
     </fragment>
+    <action
+        android:id="@+id/action_editarAlarmaFragment_to_tipoFragment"
+        app:destination="@id/tipoFragment" />
     <action
         android:id="@+id/action_editarAlarmaFragment_to_sonidoFragment"
         app:destination="@id/sonidoFragment" />
@@ -117,6 +119,16 @@
     </fragment>
     <action
         android:id="@+id/action_sonidoFragment_to_editarAlarmaFragment"
+        app:destination="@id/editarAlarmaFragment" />
+    <fragment
+        android:id="@+id/tipoFragment"
+        android:name="com.example.alarmanager.TipoFragment"
+        android:label="fragment_tipo"
+        tools:layout="@layout/fragment_tipo" >
+
+    </fragment>
+    <action
+        android:id="@+id/action_tipoFragment_to_editarAlarmaFragment"
         app:destination="@id/editarAlarmaFragment" />
 
 
