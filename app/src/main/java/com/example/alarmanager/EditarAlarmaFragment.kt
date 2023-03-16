@@ -17,6 +17,7 @@ class EditarAlarmaFragment : Fragment(R.layout.fragment_editar_alarma) {
 
         val btnBackHome = requireView().findViewById<Button>(R.id.btnBackEditar)
         val btnOk = requireView().findViewById<Button>(R.id.btnGuardarAlarma)
+        val btnEliminar = requireView().findViewById<Button>(R.id.btnEliminarAlarma)
 
         btnBackHome.setOnClickListener {
             findNavController().navigate(R.id.action_editarAlarmaFragment_to_homeFragment)
@@ -24,6 +25,11 @@ class EditarAlarmaFragment : Fragment(R.layout.fragment_editar_alarma) {
 
         btnOk.setOnClickListener {
             findNavController().navigate(R.id.action_editarAlarmaFragment_to_homeFragment)
+        }
+
+        btnEliminar.setOnClickListener {
+            findNavController().navigate(R.id.action_editarAlarmaFragment_to_eliminarAlarmaFragment)
+
         }
     }
 }

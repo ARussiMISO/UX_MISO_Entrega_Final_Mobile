@@ -47,7 +47,24 @@
         tools:layout="@layout/fragment_editar_alarma" >
     </fragment>
     <action
+        android:id="@+id/action_editarAlarmaFragment_to_eliminarAlarmaFragment"
+        app:destination="@id/eliminarAlarmaFragment" />
+    <action
         android:id="@+id/action_editarAlarmaFragment_to_homeFragment"
+        app:destination="@id/homeFragment" />
+
+    <fragment
+        android:id="@+id/eliminarAlarmaFragment"
+        android:name="com.example.alarmanager.EliminarAlarmaFragment"
+        android:label="fragment_eliminar_alarma"
+        tools:layout="@layout/fragment_eliminar_alarma" >
+
+    </fragment>
+    <action
+        android:id="@+id/action_eliminarAlarmaFragment_to_editarAlarmaFragment"
+        app:destination="@id/editarAlarmaFragment" />
+    <action
+        android:id="@+id/action_eliminarAlarmaFragment_to_homeFragment"
         app:destination="@id/homeFragment" />
 
 
